@@ -20,11 +20,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.bg-light-blue {
+    background-color: #e0f7fa;
+}
 html{
     font-size: 10px;
 }
-
+nav{
+    background-color: #1A91F0;
+}
 body{
     font-size: 1.6rem;
     font-family: var(--font-poppins);
@@ -586,4 +590,42 @@ textarea{
         top: 0;
         overflow: hidden;
     }
+}
+
+/*  */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header-content h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #1170CD; /* Darker blue on hover */
+    color: #fff; /* Keep text white */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
+}
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in to header text */
+.header-content h1, .header-content p {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Button hover animation */
+.btn-primary:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
